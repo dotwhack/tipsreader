@@ -1,0 +1,90 @@
+TIP SUBMITTER:                   Ryan He / Roy ZY1 Shi / Polun PL1 Wei
+TECHNICAL ESCALATION #:          ECR 204967
+LENOVO RECORD #:                 SF14-S0039
+DATE CREATED:                    05/21/14
+DATE LAST UPDATED:               xx/xx/xx
+CLASSIFICATION:                  Public
+SEVERITY LEVEL:                  4
+CONTACT CENTER CRITICAL:         No
+PE APPROVAL NAME:                N/A
+COMPONENT CATEGORY:              System Board/Planar/Controller/RAID
+SYMPTOM CATEGORY:                Feature or Application Not Working
+ 
+ 
+ 
+ 
+TITLE:  
+ 
+HDD LED status is incorrect in the RAID100 Configuration User Interface 
+during RAID volume rebuilds
+ 
+SYMPTOM:  
+ 
+On the Lenovo ThinkServer TD340 system, when the RAID volume is degraded 
+and an HDD is undergoing a rebuild if the user is viewing the RAID100 
+configuration User Interface (entered by pressing “Ctrl+M” during POST), 
+the LEDs on the HDDs not being rebuilt will be solid on instead of 
+blinking.  The HDD being rebuilt will function normally.  The amber LED 
+will blink at 1Hz and the green LED will blink with I/O.  
+ 
+AFFECTED CONFIGURATIONS: 
+ 
+ThinkServer
+ 
+AFFECTED SYSTEMS: 
+ 
+ThinkServer TD340
+ 
+SYSTEM IS CONFIGURED WITH:
+ 
+RAID100 (LSI Onboard SATA RAID) configured with Hot-Swappable HDDs
+ 
+OPERATING SYSTEMS
+ 
+N/A
+ 
+LIMITATIONS: 
+ 
+This issue only exists in the RAID100 OPROM configuration User Interface.  
+The HDD LEDs will function properly when the server is booted to an 
+operating system.
+ 
+SOLUTION:
+ 
+None.
+ 
+WORKAROUND:
+ 
+The lights will show correctly when a server is booted to the operating 
+system to do a RAID rebuild in the background.
+ 
+META KEY WORDS:
+ 
+ThinkServer
+TD340
+RAID100
+Rebuild
+LED
+HDD
+ 
+TRADEMARKS:
+ 
+Lenovo, ThinkServer, ThinkCentre, ThinkStation, and ThinkPad are 
+trademarks of the Lenovo Corporation in the United States, other 
+countries, or both.
+ 
+Microsoft, Windows, and the Windows logo are trademarks or registered 
+trademarks of Microsoft Corporation in the United States and/or other 
+countries.
+ 
+Other company, product, or service names may be trademarks or service 
+marks of others.
+ 
+ 
+ 
+
+TIPS (ThinkStation/ThinkCentre/ThinkServer/ThinkPad/Idea/ECAs)
+nvtipreq@lenovo.com
+Lenovo
+1009 Think Place
+Morrisville, North Carolina  27560
